@@ -58,7 +58,7 @@ function AppBarComponent() {
                 textDecoration: "none",
               }}
             >
-              LOGO
+              Reconstructora MotoCar
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -120,7 +120,7 @@ function AppBarComponent() {
                 textDecoration: "none",
               }}
             >
-              LOGO
+              Reconstructora MotoCar
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <Tabs
