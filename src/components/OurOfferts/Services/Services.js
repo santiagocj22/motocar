@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import { ListItemButton, ListItemText, List, Card } from "@mui/material";
+import {
+  ListItemButton,
+  ListItemText,
+  List,
+  Card,
+  CardContent,
+} from "@mui/material";
 import { services } from "../../../constants";
 
 function TabPanel(props) {
@@ -41,7 +47,20 @@ function Services() {
         </List>
       </Box>
       <TabPanel value={value} index={0}>
-        <Card>6</Card>
+        <Card>
+          <CardContent
+            sx={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <Box>
+              <div>IMAGEN</div>
+            </Box>
+            <Box>
+              {services[value].services.map((service) => (
+                <Card>{service.name}</Card>
+              ))}
+            </Box>
+          </CardContent>
+        </Card>
       </TabPanel>
     </Box>
   );

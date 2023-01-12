@@ -4,10 +4,10 @@ export const services = [
     name: "Servicio de Torno",
     src: "",
     services: [
-      { name: "Fabricación de poleas" },
-      { name: "Fabricación de Hidros" },
-      { name: "Fabricación de trocar" },
-      { name: "Fabricacion de bujes" },
+      { name: "Fabricación de poleas", icon: "" },
+      { name: "Fabricación de Hidros", icon: "" },
+      { name: "Fabricación de trocar", icon: "" },
+      { name: "Fabricacion de bujes", icon: "" },
     ],
   },
   {
@@ -15,10 +15,10 @@ export const services = [
     name: "Servicio de Fresadora",
     src: "",
     services: [
-      { name: "Fabricación de piñones" },
-      { name: "Fabricación de cuñeros" },
-      { name: "Fabricación de estrías" },
-      { name: "" },
+      { name: "Fabricación de piñones", icon: "" },
+      { name: "Fabricación de cuñeros", icon: "" },
+      { name: "Fabricación de estrías", icon: "" },
+      { name: "", icon: "" },
     ],
   },
   {
@@ -26,9 +26,9 @@ export const services = [
     name: "Servicio de Prensa",
     src: "",
     services: [
-      { name: "Extracción de Rodamientos" },
-      { name: "Extracción de bujes" },
-      { name: "Extracción de poleas" },
+      { name: "Extracción de Rodamientos", icon: "" },
+      { name: "Extracción de bujes", icon: "" },
+      { name: "Extracción de poleas", icon: "" },
     ],
   },
   {
@@ -36,9 +36,9 @@ export const services = [
     name: "Soldaduras",
     src: "",
     services: [
-      { name: "Soldaduras Electricas" },
-      { name: "Soldaduras en Argon" },
-      { name: "Soldaduras en Aluminio" },
+      { name: "Soldaduras Electricas", icon: "" },
+      { name: "Soldaduras en Argon", icon: "" },
+      { name: "Soldaduras en Aluminio", icon: "" },
     ],
   },
 ];
