@@ -7,3 +7,8 @@ export const contactTitle = {
   title: "Contacto",
   subtitle: "",
 };
+
+export const aboutTitle = {
+  title: "Nuestra historia",
+  subtitle: "",
+};

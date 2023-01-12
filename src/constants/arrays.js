@@ -42,3 +42,20 @@ export const services = [
     ],
   },
 ];
+
+export const teamPeople = [
+  { name: "German Clavijo", function: "Fundador", src: "" },
+  {
+    name: "Santiago Clavijo",
+    function: "Desarrollador Web, Tornero-Fresador",
+    src: "",
+  },
+  { name: "Dairon Ramirez", function: "Tornero-Fresador, Soldador", src: "" },
+  {
+    name: "Jaime Vergara",
+    function: "Tornero-Fresador, Rectificador",
+    src: "",
+  },
+  { name: "Jonathan Giraldo", function: "Mensajero", src: "" },
+  { name: "El veneco", function: "Tornero-Fresador, Rectificador", src: "" },
+];

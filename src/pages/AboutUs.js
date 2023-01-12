@@ -1,7 +1,8 @@
 import React from "react";
+import { AboutContainer } from "../containers";
 
 function AboutUs() {
-  return <div>AboutUs</div>;
+  return <AboutContainer />;
 }
 
 export default AboutUs;
