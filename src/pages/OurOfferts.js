@@ -1,7 +1,8 @@
 import React from "react";
+import { OurOffertsContainer } from "../containers";
 
 function OurOfferts() {
-  return <div>OurOfferts</div>;
+  return <OurOffertsContainer />;
 }
 
 export default OurOfferts;
