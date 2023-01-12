@@ -1,22 +1,22 @@
 import { paths } from "./paths";
-import { HomePage } from "../pages";
+import { AboutUs, Contact, OurOfferts } from "../pages";
 
 export const routes = [
   {
     name: "Acerca de nosotros",
-    component: "",
+    element: <AboutUs />,
     path: paths.ABOUT_US,
     index: false,
   },
   {
     name: "Nuestras ofertas",
-    component: "",
+    element: <OurOfferts />,
     path: paths.OUR_OFFERINGS,
     index: false,
   },
   {
     name: "Contacto",
-    component: "",
+    element: <Contact />,
     path: paths.CONTACT,
     index: false,
   },
