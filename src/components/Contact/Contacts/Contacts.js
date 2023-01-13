@@ -3,6 +3,12 @@ import { Card, Box, CardContent } from "@mui/material";
 import { Text, Buttons } from "../../sharedComponents";
 
 function Contacts() {
+  const openNewTab = () => {
+    const position =
+      "https://www.google.com/maps/search/?api=1&query=6.241258,-75.573694";
+    const win = window.open(position, "_blank");
+    win.focus();
+  };
   return (
     <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
       <Card>
@@ -15,7 +21,7 @@ function Contacts() {
             <Text fontSize={"15px"}>
               Calle 40 # 52 a 26 Medellín, Antioquia{" "}
             </Text>
-            <Buttons>Ver en Mapa</Buttons>
+            <Buttons onClick={openNewTab}>Ver en Mapa</Buttons>
           </Box>
         </CardContent>
       </Card>

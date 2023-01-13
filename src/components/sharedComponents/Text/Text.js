@@ -12,7 +12,7 @@ const Text = styled(Typography)(
 );
 
 Text.defaultProps = {
-  color: "purple",
+  color: "#2c2b72",
   fontSize: "1.5rem",
   fontWeight: "bold",
   margin: "0.5rem",

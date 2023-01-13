@@ -8,21 +8,7 @@ import {
   CardContent,
 } from "@mui/material";
 import { services } from "../../../constants";
-
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
-  return (
-    <div
-      role="tabpanel"
-      id={`simple-tabpanel-${index}`}
-      aria-labelledby={`simple-tab-${index}`}
-      {...other}
-    >
-      <Box sx={{ p: 3 }}>{children}</Box>
-    </div>
-  );
-}
+import { Text, Buttons } from "../../sharedComponents";
 
 function Services() {
   const [value, setValue] = useState(0);
@@ -34,19 +20,23 @@ function Services() {
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-        <List>
+        <List sx={{ display: "flex", justifyContent: "space-around" }}>
           {services.map((service, index) => (
-            <ListItemButton
+            <Buttons
+              sx={{
+                width: "200px",
+                color: index === value ? "#0907a9" : "#e1b40f",
+              }}
               key={service.id}
-              selected={index === value}
+              backgroundcolor={index === value ? "#e1b40f" : "#0907a9"}
               onClick={() => onClick(index)}
             >
-              <ListItemText primary={service.name} />
-            </ListItemButton>
+              {service.name}
+            </Buttons>
           ))}
         </List>
       </Box>
-      <TabPanel value={value} index={0}>
+      <Box>
         <Card>
           <CardContent
             sx={{ display: "flex", justifyContent: "space-between" }}
@@ -54,14 +44,44 @@ function Services() {
             <Box>
               <div>IMAGEN</div>
             </Box>
-            <Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                justifyContent: "space-around",
+                width: "70%",
+              }}
+            >
               {services[value].services.map((service) => (
-                <Card>{service.name}</Card>
+                <Card
+                  key={service.name}
+                  sx={{
+                    position: "relative",
+                    margin: "40px 20px",
+                    overflow: "visible",
+                  }}
+                >
+                  <Box
+                    sx={{
+                      border: "1px solid",
+                      width: "80px",
+                      height: "50px",
+                      position: "absolute",
+                      left: "20px",
+                      bottom: "64px",
+                    }}
+                  >
+                    IMAGEN
+                  </Box>
+                  <CardContent>
+                    <Text fontSize={"20px"}>{service.name}</Text>
+                  </CardContent>
+                </Card>
               ))}
             </Box>
           </CardContent>
         </Card>
-      </TabPanel>
+      </Box>
     </Box>
   );
 }

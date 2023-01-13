@@ -1,12 +1,11 @@
-// import PropTypes from "prop-types";
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const Buttons = styled(Button)(
   ({
-    borderradius = "8px",
-    backgroundcolor = "purple",
-    color = "#FFF",
+    borderradius = "23px",
+    backgroundcolor =  "#0907a9",
+    color = "#e1b40f",
     onClick,
     ...rest
   }) => ({
@@ -18,6 +17,7 @@ const Buttons = styled(Button)(
     position: "relative",
     height: "48px",
     "&:hover": {
+      boxShadow: "4px 5px 7px cornflowerblue",
       backgroundColor: backgroundcolor,
       opacity: 0.8,
       fontWeight: "bold",
@@ -27,12 +27,4 @@ const Buttons = styled(Button)(
   })
 );
 
-// Buttons.propTypes = {
-//   color: PropTypes.string,
-//   children: PropTypes.string,
-//   label: PropTypes.string,
-//   backgroundColor: PropTypes.string,
-//   size: PropTypes.oneOf(["sm", "md", "lg"]),
-//   onClick: PropTypes.func,
-// };
 export { Buttons };

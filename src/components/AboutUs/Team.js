@@ -6,7 +6,7 @@ function Team() {
   return (
     <Box>
       {teamPeople.map((person) => (
-        <Card>
+        <Card key={person.name}>
           <Box>IMAGEN</Box>
           <CardContent>
             <Text fontSize={"18px"}>{person.name}</Text>

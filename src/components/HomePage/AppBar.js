@@ -133,18 +133,15 @@ function AppBarComponent() {
                   label="Inicio"
                   onClick={() => handleCloseNavMenu("/")}
                   sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  Inicio
-                </Tab>
+                />
+
                 {routes.map((route) => (
                   <Tab
                     label={route.name}
                     key={route.name}
                     onClick={() => handleCloseNavMenu(route.path)}
                     sx={{ my: 2, color: "white", display: "block" }}
-                  >
-                    {route.name}
-                  </Tab>
+                  />
                 ))}
               </Tabs>
             </Box>
