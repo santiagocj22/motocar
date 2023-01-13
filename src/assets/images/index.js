@@ -1,0 +1,11 @@
+export { default as aluminium } from "./aluminium.png";
+export { default as argonWeld } from "./argonWeld.png";
+export { default as bearing } from "./bearing.png";
+export { default as bujes } from "./bujes.png";
+export { default as cunero } from "./cunero.png";
+export { default as electricWeld } from "./electricWeld.png";
+export { default as estrias } from "./estrias.png";
+export { default as gears } from "./gears.png";
+export { default as hidro } from "./hidro.png";
+export { default as pulley } from "./pulley.png";
+export { default as trocars } from "./trocars.png";

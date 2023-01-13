@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
-import {
-  ListItemButton,
-  ListItemText,
-  List,
-  Card,
-  CardContent,
-} from "@mui/material";
+import { List, Card, CardContent } from "@mui/material";
 import { services } from "../../../constants";
 import { Text, Buttons } from "../../sharedComponents";
+import { images } from "../../../assets";
 
 function Services() {
   const [value, setValue] = useState(0);
@@ -63,15 +58,22 @@ function Services() {
                 >
                   <Box
                     sx={{
-                      border: "1px solid",
+                      backgroundColor: "purple",
+                      padding: "5px",
+                      border: "4px solid aquamarine",
+                      borderRadius: "12px",
                       width: "80px",
                       height: "50px",
                       position: "absolute",
                       left: "20px",
                       bottom: "64px",
+                      boxShadow: "4px 5px 7px cornflowerblue",
                     }}
                   >
-                    IMAGEN
+                    <img
+                      src={service.icon}
+                      style={{ width: "100%", height: "100%" }}
+                    />
                   </Box>
                   <CardContent>
                     <Text fontSize={"20px"}>{service.name}</Text>

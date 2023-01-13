@@ -1,13 +1,15 @@
+import {images} from '../assets';
+
 export const services = [
   {
     id: 1,
     name: "Servicio de Torno",
     src: "",
     services: [
-      { name: "Fabricación de poleas", icon: "" },
-      { name: "Fabricación de Hidros", icon: "" },
-      { name: "Fabricación de trocar", icon: "" },
-      { name: "Fabricacion de bujes", icon: "" },
+      { name: "Fabricación de poleas", icon: images.pulley },
+      { name: "Fabricación de Hidros", icon: images.hidro },
+      { name: "Fabricación de trocar", icon: images.trocars },
+      { name: "Fabricacion de bujes", icon: images.bujes },
     ],
   },
   {
@@ -15,10 +17,9 @@ export const services = [
     name: "Servicio de Fresadora",
     src: "",
     services: [
-      { name: "Fabricación de piñones", icon: "" },
-      { name: "Fabricación de cuñeros", icon: "" },
-      { name: "Fabricación de estrías", icon: "" },
-      { name: "", icon: "" },
+      { name: "Fabricación de piñones", icon:images.gears },
+      { name: "Fabricación de cuñeros", icon: images.cunero },
+      { name: "Fabricación de estrías", icon: images.estrias },
     ],
   },
   {
@@ -26,9 +27,9 @@ export const services = [
     name: "Servicio de Prensa",
     src: "",
     services: [
-      { name: "Extracción de Rodamientos", icon: "" },
-      { name: "Extracción de bujes", icon: "" },
-      { name: "Extracción de poleas", icon: "" },
+      { name: "Extracción de Rodamientos", icon: images.bearing },
+      { name: "Extracción de bujes", icon: images.bujes },
+      { name: "Extracción de poleas", icon: images.pulley },
     ],
   },
   {
@@ -36,9 +37,9 @@ export const services = [
     name: "Soldaduras",
     src: "",
     services: [
-      { name: "Soldaduras Electricas", icon: "" },
-      { name: "Soldaduras en Argon", icon: "" },
-      { name: "Soldaduras en Aluminio", icon: "" },
+      { name: "Soldaduras Electricas", icon: images.electricWeld },
+      { name: "Soldaduras en Argon", icon: images.argonWeld },
+      { name: "Soldaduras en Aluminio", icon: images.aluminium },
     ],
   },
 ];
