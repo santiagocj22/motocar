@@ -11,11 +11,11 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Outlet, useNavigate } from "react-router-dom";
 import { TabPanel } from "./styles";
 import { routes } from "../../routes";
+import { images } from "../../assets";
 
 function AppBarComponent() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -36,13 +36,13 @@ function AppBarComponent() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  console.log(value);
 
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: "#1c264f" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
             <Typography
               variant="h6"
               noWrap
@@ -58,7 +58,10 @@ function AppBarComponent() {
                 textDecoration: "none",
               }}
             >
-              Reconstructora MotoCar
+              <img
+                src={images.logo}
+                style={{ width: "500px", height: "80px" }}
+              />
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -103,7 +106,6 @@ function AppBarComponent() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -120,27 +122,34 @@ function AppBarComponent() {
                 textDecoration: "none",
               }}
             >
-              Reconstructora MotoCar
+              <img src={images.logo} />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <Tabs
+                TabIndicatorProps={{
+                  style: { background: "#e1b40f", color: "yellow" },
+                }}
+                sx={{ color: "yellow" }}
                 textColor="secondary"
-                indicatorColor="secondary"
                 value={value}
                 onChange={handleChange}
               >
                 <Tab
                   label="Inicio"
                   onClick={() => handleCloseNavMenu("/")}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 2, color: "#e1b40f", display: "block" }}
                 />
 
-                {routes.map((route) => (
+                {routes.map((route, index) => (
                   <Tab
                     label={route.name}
                     key={route.name}
                     onClick={() => handleCloseNavMenu(route.path)}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{
+                      my: 2,
+                      color: "white",
+                      display: "block",
+                    }}
                   />
                 ))}
               </Tabs>

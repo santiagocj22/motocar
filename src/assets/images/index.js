@@ -9,3 +9,4 @@ export { default as gears } from "./gears.png";
 export { default as hidro } from "./hidro.png";
 export { default as pulley } from "./pulley.png";
 export { default as trocars } from "./trocars.png";
+export { default as logo } from "./logo.png";
